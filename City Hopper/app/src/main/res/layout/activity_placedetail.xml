@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp" />
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/open"
+        android:src="@mipmap/ic_open"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/ray"
+        android:visibility="gone"
+        android:background="#99000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:background="@color/colorWhite"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:textColorHint="@color/colorAccent"
+                    app:hintTextAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/nametxt"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorBackground1"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Name"
+                        android:text="Sai veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:background="#CCCCCC"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:textColorHint="@color/colorAccent"
+                    app:hintTextAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ratingtxt"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorBackground1"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Ratings"
+                        android:text="Sai veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:background="#CCCCCC"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:textColorHint="@color/colorAccent"
+                    app:hintTextAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/addresstxt"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorBackground1"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Address"
+                        android:text="Sai veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:background="#CCCCCC"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:textColorHint="@color/colorAccent"
+                    app:hintTextAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/contacttxt"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorBackground1"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Contact"
+                        android:text="Sai veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:background="#CCCCCC"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:textColorHint="@color/colorAccent"
+                    app:hintTextAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/isopen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/isopentxt"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorBackground1"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Is Opened?"
+                        android:text="Sai veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:background="#CCCCCC"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:textColorHint="@color/colorAccent"
+                    app:hintTextAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/timings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/timingstxt"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorBackground1"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Timings"
+                        android:text="Sai veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:background="#CCCCCC"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:textColorHint="@color/colorAccent"
+                    app:hintTextAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/websitetxt"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/colorBackground1"
+                        android:padding="5dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Website"
+                        android:text="Sai veg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:background="#CCCCCC"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/close"
+            android:src="@mipmap/ic_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

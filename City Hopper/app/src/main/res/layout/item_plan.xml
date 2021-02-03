@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorWhite"
+    android:layout_margin="4dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/main_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/text_plan_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TestPlanName"
+                android:textSize="19sp"
+                android:textColor="@color/colorAccent"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/text_plan_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TestPlanName"
+                android:textSize="17sp"
+                android:textColor="@color/colorAccent"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/delete_plan"
+            android:layout_width="@dimen/delete_size"
+            android:layout_height="@dimen/delete_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_action_delete"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

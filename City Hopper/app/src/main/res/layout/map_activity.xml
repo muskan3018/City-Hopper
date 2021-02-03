@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_algorithm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/algo_antcolony"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Ant Colony"
+                android:textColor="@color/colorWhite"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/algo_Greedy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Greedy"
+                android:textColor="@color/colorWhite"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_algorithm"
+            android:layout_marginTop="1dp" />
+
+        <ImageView
+            android:id="@+id/btnCurrentLocation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="55dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_icon_current"
+            />
+
+        <LinearLayout
+            android:id="@+id/holder_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_algorithm"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@color/colorLightTransparent">
+
+            <LinearLayout
+                android:id="@+id/holder_buttons_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/btnPrevious_days"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:rotation="180"
+                    android:src="@drawable/ic_action_right"
+                    android:tint="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/selectedItem_days"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="21sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/btnNext_days"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_right"
+                    android:tint="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/holder_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/btnPrevious"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:rotation="180"
+                    android:src="@drawable/ic_action_right"
+                    android:tint="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/selectedItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="21sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/btnNext"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_right"
+                    android:tint="@color/colorWhite" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_Map"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Submit"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_Map_Cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Cancel"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorWhite"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:text="Long Press to Choose Location"
+            android:textColor="@color/colorBackground1"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:visibility="visible"
+        android:id="@+id/weatherreport"
+        android:background="@color/colorBackground2"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:text="Weather Report"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center"
+                        android:typeface="serif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:src="@mipmap/ic_close"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/pd_statustb"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pd_status"
+                android:typeface="serif"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/pd_temptb"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pd_temp"
+                android:typeface="serif"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/pd_humiditytb"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pd_humidity"
+                android:typeface="serif"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/pd_windtb"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pd_wind"
+                android:typeface="serif"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

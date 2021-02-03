@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground2"
+    android:orientation="vertical"
+    tools:context=".city.SortActivity">
+
+    <ListView
+        android:id="@+id/list_sort"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp"
+        android:padding="3dp"
+        android:scrollbars="none"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_sort_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:textSize="19sp"
+            android:text="Continue"
+            />
+
+        <Button
+            android:id="@+id/btn_sort_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorAccent"
+            android:textSize="19sp"
+            android:text="Clear"
+            />
+    </TableRow>
+
+</RelativeLayout>

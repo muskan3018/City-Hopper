@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".city.SelectionActivity">
+
+    <ListView
+        android:id="@+id/list_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground2"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:padding="3dp"
+        android:scrollbars="none"
+        android:layout_marginBottom="45dp"/>
+
+    <Button
+        android:id="@+id/btn_selection"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="Submit"
+        android:textColor="@color/colorWhite"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:id="@+id/dialog_s_layout"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:background="@color/primaryColor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Show \nPlaces"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

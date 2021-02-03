@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">City Hopper</string>
+    <string name="hint_email">Enter Email</string>
+    <string name="hint_pass">Enter Password</string>
+    <string name="register_text">Don\'t have an Account, Sign Up Here</string>
+    <string name="logout">Logout</string>
+    <string name="text_profile">Profile</string>
+    <string name="text_home">Home</string>
+    <string name="text_travelplan">Travel Plan</string>
+    <string name="pass">Change Password</string>
+    <string name="oldpassword">Old Password</string>
+    <string name="newpassword">New Passwrord</string>
+    <string name="home_hint">No of Hours</string>
+
+    <string name="dialog_hint">Time (Min)</string>
+    <string name="title_alert">Enter, how much time you want to spend here :</string>
+    <string name="appid">APPID=a3e8991284223a7fac4979af7b3ba7c1</string>
+    <string name="hint_city">Enter Time Hours</string>
+    <string name="hint_destination">Enter Number of Days</string>
+
+    <string-array name="Cuisine">
+        <item>Thai</item>
+        <item>Mexican</item>
+        <item>Italian</item>
+        <item>Indian</item>
+        <item>Chinese</item>
+        <item>French</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <string-array name="Places">
+        <item>Cafe</item>
+        <item>Museum</item>
+        <item>Beaches</item>
+        <item>Parks</item>
+        <item>Shopping Mall</item>
+        <item>Amusement Park</item>
+        <item>Art Gallery</item>
+        <item>Night Club</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footerView"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/footer"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="Load More"
+    android:fontFamily="serif"
+    android:textColor="@color/colorAccent"
+    android:textSize="19sp"
+    android:textStyle="bold"
+    android:visibility="gone"
+    />

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="90dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_View"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/beach" />
+
+    <TextView
+        android:id="@+id/txt_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_View"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="1.5dp"
+        android:singleLine="true"
+        android:text="Amusement Park"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        app:lottie_rawRes="@raw/tick_animation" />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alert_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Add Place"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/alert_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/title_alert"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edit_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/dialog_hint"
+            android:inputType="number"
+            android:textColor="@color/colorAccent" />
+
+        <TableRow
+            android:id="@+id/button_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"
+            >
+
+            <TextView
+                android:id="@+id/btn_negative"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_size"
+                android:textSize="17sp"
+                android:text="CANCEL"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textStyle="bold"
+                android:textColor="#ff009688"
+                />
+
+            <TextView
+                android:id="@+id/btn_positive"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_size"
+                android:textSize="17sp"
+                android:text="PROCEED"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#ff009688"
+                android:textStyle="bold"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </TableRow>
+
+    </LinearLayout>
+
+</RelativeLayout>
